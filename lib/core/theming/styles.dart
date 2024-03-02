@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
 import 'package:flutteradvace/core/theming/colors.dart';
@@ -70,4 +69,14 @@ class TextStyles {
       fontSize: 16.sp,
       fontWeight: FontWeightHelper.medium,
       color: Colors.white);
+
+  static TextStyle font15DarkBlueMedium = TextStyle(
+      fontSize: 15.sp,
+      fontWeight: FontWeightHelper.medium,
+      color: ColorsManager.darkBlue);
+
+  static TextStyle font14BlueSemiBold = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeightHelper.semiBold,
+      color: ColorsManager.mainBlue);
 }
