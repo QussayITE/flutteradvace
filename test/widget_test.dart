@@ -10,7 +10,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutteradvace/core/routing/app_router.dart';
 import 'package:flutteradvace/doc_app.dart';
 
-import 'package:flutteradvace/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
