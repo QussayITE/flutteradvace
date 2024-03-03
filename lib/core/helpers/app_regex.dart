@@ -6,7 +6,7 @@ class AppRegex {
 
   static bool isPasswordValid(String password) {
     return RegExp(
-        r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$")
+            r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$")
         .hasMatch(password);
   }
 
@@ -28,5 +28,10 @@ class AppRegex {
 
   static bool hasMinLength(String password) {
     return RegExp(r'^(?=.{8,})').hasMatch(password);
+  }
+
+  static bool isPhoneNumberValid(String password) {
+    return RegExp(r'^(?:\+971|00971|0)?(?:50|51|52|55|56|2|3|4|6|7|9)\d{7}$')
+        .hasMatch(password);
   }
 }
