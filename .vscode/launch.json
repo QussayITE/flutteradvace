@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "DocDoc development",
+      "name": "DocDoc Development",
       "request": "launch",
       "type": "dart",
       "program": "lib/main_development.dart",
@@ -14,7 +14,7 @@
       ]
     },
     {
-      "name": "DocDoc production",
+      "name": "DocDoc Production",
       "request": "launch",
       "type": "dart",
       "program": "lib/main_production.dart",
