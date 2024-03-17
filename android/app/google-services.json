@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "624322636538",
+    "project_id": "flutter-app-distribution-abacc",
+    "storage_bucket": "flutter-app-distribution-abacc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624322636538:android:897f87207c6d73bc0cb743",
+        "android_client_info": {
+          "package_name": "com.example.flutteradvace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8oeixWJulM9iLVfdmEMjT69gAePYKIeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
