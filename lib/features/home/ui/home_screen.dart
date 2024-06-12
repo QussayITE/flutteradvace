@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutteradvace/features/home/ui/widgets/doctor_blue_container.dart';
 import 'package:flutteradvace/features/home/ui/widgets/home_top_bar.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -15,7 +16,8 @@ class HomeScreen extends StatelessWidget {
           child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const HomeTopBar(),
+               HomeTopBar(),
+              DoctorBlueContainer(),
             ],
           ),
         ),
