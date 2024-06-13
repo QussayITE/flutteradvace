@@ -39,7 +39,7 @@ class AppRouter {
               child: Text("No Route define d for ${routeSettings.name}"),
             ),
           ),
-        );
+        ) ;
     }
   }
 }
