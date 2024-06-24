@@ -65,6 +65,10 @@ dependencies:
   firebase_core: ^2.24.2
   #Flutter library to load and cache network images. Can also be used with placeholder and error widgets.
   cached_network_image: ^3.3.1
+  #Flutter plugin for reading and writing simple key-value pairs.
+  shared_preferences: ^2.2.3
+  #Flutter Secure Storage provides API to store data in secure storage
+  flutter_secure_storage: ^9.2.2
 
 dev_dependencies:
   flutter_test:
