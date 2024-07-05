@@ -5,11 +5,12 @@ import 'package:flutteradvace/core/helpers/spacing.dart';
 import 'package:flutteradvace/features/home/logic/home_cubit.dart';
 import 'package:flutteradvace/features/home/logic/home_state.dart';
 import 'package:flutteradvace/features/home/ui/widgets/doctor_blue_container.dart';
-import 'package:flutteradvace/features/home/ui/widgets/doctor_list_view.dart';
+import 'package:flutteradvace/features/home/ui/widgets/doctors_list/doctor_list_view.dart';
+import 'package:flutteradvace/features/home/ui/widgets/doctors_list/doctors_bloc_builder.dart';
 import 'package:flutteradvace/features/home/ui/widgets/doctors_specialit_see_all.dart';
-import 'package:flutteradvace/features/home/ui/widgets/doctors_speciality_list_view.dart';
+import 'package:flutteradvace/features/home/ui/widgets/specializaations_list/speciality_list_view.dart';
 import 'package:flutteradvace/features/home/ui/widgets/home_top_bar.dart';
-import 'package:flutteradvace/features/home/ui/widgets/specializations_and_doctors_bloc.dart';
+import 'package:flutteradvace/features/home/ui/widgets/specializaations_list/specializations_bloc_builder.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -27,10 +28,12 @@ class HomeScreen extends StatelessWidget {
             children: [
               const HomeTopBar(),
               const DoctorBlueContainer(),
-              verticalSpace(24.h),
+              verticalSpace(24),
               const DoctorsSpecialitySeeAll(),
-              verticalSpace(18.h),
-              const SpecializationsAndDoctorsBloc(),
+              verticalSpace(18),
+              const SpecializationsBlocBuilder(),
+              verticalSpace(8),
+              const DoctorsBlocBuilder(),
             ],
           ),
         ),
