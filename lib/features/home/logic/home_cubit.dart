@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutteradvace/core/helpers/extensions.dart';
+import 'package:flutteradvace/core/networking/api_error_model.dart';
 import 'package:flutteradvace/features/home/data/%20repos/home_repo.dart';
 import '../../../core/networking/api_error_handler.dart';
 import '../data/models/specializations_response_model.dart';
@@ -26,8 +27,8 @@ class HomeCubit extends Cubit<HomeState> {
         emit(HomeState.specializationsSuccess(
             specializationsResponseModel.specializationDataList));
       },
-      failure: (errorHandler) {
-        emit(HomeState.specializationsError(errorHandler));
+      failure: (apiErrorModel) {
+        emit(HomeState.specializationsError(apiErrorModel));
       },
     );
   }
@@ -42,7 +43,7 @@ class HomeCubit extends Cubit<HomeState> {
       emit(HomeState.doctorsSuccess(doctorsList));
       debugPrint("Coming if: ${doctorsList?.length}");
     } else {
-      emit(HomeState.doctorsError(ErrorHandler.handle('No doctors found')));
+      emit(HomeState.doctorsError());
       debugPrint("Coming else: ${doctorsList?.length}");
     }
   }
